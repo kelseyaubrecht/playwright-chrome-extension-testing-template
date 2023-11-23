@@ -1,0 +1,13 @@
+{
+  "name": "playwright-extension-testing-template",
+  "version": "0.1.0",
+  "repository": "git@github.com:kelseyaubrecht/playwright-extension-testing-template.git",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.9.4",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.54.0",
+    "prettier": "^3.1.0"
+  }
+}
