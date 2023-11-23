@@ -8,6 +8,7 @@ This project serves as a template for testing chrome extensions using Playwright
 - [Run tests](#run-tests)
 - [Useful links](#useful-links)
 - [Example extension](#example-extension)
+- [GitHub Action](github-action)
 
 ## Getting started
 
@@ -38,3 +39,8 @@ The project contains a rudimentary extension to demonstrate use in tests.
 - script that loads current date
 - background script to launch service worker (necessary to retrieve the extensionID via fixture)
 - content script that adds a \<div>testDivText\</div> to any visited site
+
+## GitHub Action
+
+An [example workflow](.github/workflows/test_playwright.yml) to show running playwright tests with an extension in GitHub Actions.
+The installs dependencies, runs the tests, and uploads the report.
