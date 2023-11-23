@@ -14,7 +14,7 @@ This project serves as a template for testing chrome extensions using Playwright
 To set up the environment for the first time run:
 
 - `yarn`
-- `yarn install chromium`
+- `yarn playwright install chromium`
 
 ## Run tests
 
@@ -30,10 +30,9 @@ To execute all tests use:
 
 ## Example extension
 
-[extension](extension)
+The project contains a rudimentary extension to demonstrate use in tests.
 
-The project contains a rudimentary extension to demonstrate test runs.
-Contents:
+[Extension](extension) contents:
 
 - index with title and current date
 - script that loads current date
