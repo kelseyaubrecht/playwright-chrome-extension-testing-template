@@ -1,3 +1,5 @@
+![ ](https://github.com/kelseyaubrecht/playwright-extension-testing-template/actions/workflows/test_playwright.yml/badge.svg)
+
 # Playwright extension testing template
 
 This project serves as a template for testing chrome extensions using Playwright.
