@@ -46,3 +46,20 @@ The project contains a rudimentary extension to demonstrate use in tests.
 
 An [example workflow](.github/workflows/test_playwright.yml) to show running playwright tests with an extension in GitHub Actions.
 The installs dependencies, runs the tests, and uploads the report.
+
+
+## Troubleshooting and tips
+
+### Failed to get extension ID (extension has no service worker)
+You may encounter this error if the extension under test does not launch a service worker.
+The extensionTest fixture uses the extension's service workers to retrieve it's ID.
+```
+Error: browserContext.waitForEvent: Timeout 15000ms exceeded while waiting for event "serviceworker"
+```
+To fix add a background script to the manifest. Example in [./extension/manifest.json](extension/manifest.json) and [./extension/background.js](extension/background.js).
+```
+"background": {
+    "service_worker": "background.js"
+}
+```
+Alternatively you can retrieve the extension ID by navigating to `chrome://extensions/` and enabling Developer mode.
