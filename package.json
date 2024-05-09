@@ -1,7 +1,7 @@
 {
-  "name": "playwright-extension-testing-template",
+  "name": "playwright-chrome-extension-testing-template",
   "version": "0.1.0",
-  "repository": "git@github.com:kelseyaubrecht/playwright-extension-testing-template.git",
+  "repository": "git@github.com:kelseyaubrecht/playwright-chrome-extension-testing-template.git",
   "license": "Apache-2.0",
   "devDependencies": {
     "@playwright/test": "^1.40.0",
